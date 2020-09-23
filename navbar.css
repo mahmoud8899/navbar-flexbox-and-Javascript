@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Epilogue', sans-serif;
+}
+
+nav
+{
+    background-color: #eee;
+    width: 100%;
+    height: 9vh;
+}
+
+
+.list
+{
+    list-style: none;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    justify-content: space-evenly;
+    animation: changecolor 0.50s;
+    overflow: hidden;
+}
+
+.list li 
+{
+    
+}
+
+.list li a 
+{
+    text-decoration: none;
+color: #000;
+font-size: 23px;
+font-weight: bold;
+cursor: pointer;
+
+
+
+}
+
+@keyframes changecolor {
+    from
+    {
+opacity: 0.2;
+transform: translate(-100px)
+    }
+    to{
+opacity: 1;
+    }
+}
+
+section
+{
+    display: flex;
+    width: auto;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+
+
+h1
+{
+    color: #2b18ac;
+margin-left: 10px;
+font-size: 32px;
+animation: mahmoud 0.50s;
+overflow: hidden;
+}
+
+h1::first-letter
+{
+    color: #000
+}
+
+
+@keyframes mahmoud
+{
+    from{
+        opacity: 0.5;
+        transform: translate(-200px)
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+@media  screen and (max-width: 750px)
+{
+
+
+    .list
+    {
+        width: 100%;
+        height: 99vh;
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        clip-path: circle(566px at 29% -79% );
+-webkit-clip-path: circle(566px at 29% -79% );
+pointer-events: none;
+overflow: hidden;
+transition: all 0.40s ease-in-out;
+    }
+
+    .list li{
+        opacity: 0.2;
+    }
+    .list li:nth-child(1)
+    {
+        transition: all 0.30s ease 0.30s;
+        
+    }
+    .list li:nth-child(2)
+    {
+        transition: all 0.30s ease 0.30s;
+        
+    }
+
+    .list li:nth-child(3)
+    {
+        transition: all 0.30s ease 0.30s;
+        
+    }
+    .list .xp
+    {
+
+        opacity: 1;
+    }
+
+    .active
+    {
+        clip-path: circle(848px at 90% -0%);
+    }
+
+    .humer
+    {
+
+        z-index: 2;
+position: absolute;
+display: flex;
+width: 37px;
+height: 37px;
+top: 10px;
+right: 20px;
+flex-direction: column;
+    }
+
+    .humer .xx
+    {
+        width: 100%;
+        height: 5px;
+        background: #fff;
+        margin-top: 5px;
+    }
+}
